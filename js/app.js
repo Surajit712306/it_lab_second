@@ -28,6 +28,10 @@ function handleSubmit(e)
 
     input.value = '';
     input.focus();
+
+    const submitBtn = document.querySelector(".btn--submit");
+    submitBtn.setAttribute("disabled", true);
+    submitBtn.classList.add("disabled");
 }
 
 window.onload = function(){
